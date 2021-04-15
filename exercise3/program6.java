@@ -16,12 +16,11 @@ public class program6 {
 		try{  
 			  Card s1 =new Card(211);  
 			  FileOutputStream fileOut =new FileOutputStream("C:\\Users\\rinit\\eclipse-workspace\\Programs\\files\\f.txt");
-				         ObjectOutputStream out = new ObjectOutputStream(fileOut);
-				         out.writeObject(s1);
-				         out.close();
-				         fileOut.close();
-				         System.out.printf("Serialized data is saved in /tmp/employee.ser"); 
-			  System.out.println("success");
+			 ObjectOutputStream out = new ObjectOutputStream(fileOut);
+		out.writeObject(s1);
+		out.close();
+		fileOut.close();
+		System.out.println("success");
 		}
 		catch(Exception e) {
 			
